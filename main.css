@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(weather.jpeg);
+    background-size: cover;
+    background-position: top center;
+}
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.6));
+}
+.heading{
+    text-align: center;
+    font-size: 80px;
+    background: -webkit-linear-gradient(#ffffff,#00BFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+header input{
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px 16px 10px 16px;
+    border-bottom: 3px solid #00BFFF;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+}
+header input:focus{
+    background-color: rgba(255,255,255,0.6);
+    
+}
+main{
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.location .city{
+    background: -webkit-linear-gradient(#ffffff,#00BFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.location .date{
+    background: -webkit-linear-gradient(#ffffff,#00BFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 16px;
+}
+.current .temp{
+    background: -webkit-linear-gradient(#ffffff,#00BFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0px;
+    text-shadow: 0px 4px #00BFFF ;
+}
+.current .temp span{
+    font-weight: 500;
+}
+.current .weather{
+    background: -webkit-linear-gradient(#ffffff,#00BFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 3px 0px #00BFFF;
+}
+.current .high-low{
+    background: -webkit-linear-gradient(#ffffff,#00BFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 2px 0px #00BFFF;
+}
+
